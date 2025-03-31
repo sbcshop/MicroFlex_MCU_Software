@@ -1,6 +1,6 @@
 # MicroFlex_MCU_Software
 
-Microflex MCUs: A Series of Powerful Microcontroller Boards – an innovative series featuring five distinct microcontroller boards: 𝑬𝑺𝑷32 𝑺3, 𝐸𝑆𝑃32 𝑆2, 𝙀𝑺𝙋32 𝘾3, 𝗘𝗦𝗣𝟯𝟮 𝗖𝟲, and 𝑷𝒊𝒄𝒐 𝑹𝑷2040. Each board is designed to cater to unique application scenarios, providing a versatile solution for your microcontroller needs.
+Microflex MCUs: A Series of Powerful Microcontroller Boards – an innovative series featuring five distinct microcontroller boards: **ESP32 S3, ESP32 S2, ESP32 C3, ESP32 C6, and Pico RP2040**. Each board is designed to cater to unique application scenarios, providing a versatile solution for your microcontroller needs.
 
 This GitHub provides basic instructions for working with specific MCU boards.
 <!--
@@ -8,10 +8,10 @@ This GitHub provides basic instructions for working with specific MCU boards.
 
 | Feature   | Micro S3 | Micro S2 | Micro C3 | Micro C6 | Micro RP2040 |
 |-----------|----------|----------|----------|----------|--------------|
-| CPU       |       |       |       |       |           |
+| CPU       |          |          |          |          |              |
 | Datasheet | [ESP32-S3](https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/Documents/esp32-s3_datasheet_en.pdf) | [ESP32-S2](https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/Documents/esp32-s2_datasheet_en.pdf) | [ESP32-C3](https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/Documents/esp32-c3_datasheet_en.pdf) | [ESP32-C6](https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/Documents/esp32-c6_datasheet_en.pdf) | [RP2040](https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/Documents/rp2040-datasheet.pdf) |
--->
 
+-->
 
 
 <!--
