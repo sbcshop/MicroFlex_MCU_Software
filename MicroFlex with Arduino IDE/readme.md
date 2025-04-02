@@ -1,6 +1,41 @@
-## Getting Started  
+# Project Name
 
-### 1. Configure and Setup Development Environment
+## 📑 Table of Contents
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Contributing](#contributing)
+6. [License](#license)
+7. [Contact](#contact)
+
+## 🏁 Introduction
+Brief overview of the project...
+
+## ✨ Features
+- Feature 1
+- Feature 2
+- Feature 3
+
+## 🔧 Installation
+Steps to install...
+
+## 🚀 Usage
+How to use the project...
+
+## 🤝 Contributing
+Guidelines for contributing...
+
+## 📜 License
+Details about licensing...
+
+## 📩 Contact
+Email, social links...
+
+
+# MicroFlex MCU Boards with Arduino IDE 
+
+## 1. Configure and Setup Development Environment
 - Download Arduino IDE from [official site](https://www.arduino.cc/en/software) and install into your system. We have use Arduino IDE 1.8.19
 - Once installation done will add ESP32 Series and Pico board support into IDE, for this first you need to add below link into preference:
   
@@ -23,7 +58,8 @@
   <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/b2.png" width="591" height="333">
   <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/b3.png" width="585" height="331">
      
-#### For Micro S3, S2, C3 and C6
+## 2. Running Examples
+### For Micro S3, S2, C3 and C6
 - Here Native USB of ESP32 is used, so you will have to press hold BOOT button and then connect Type C for uploading codes. Pressing the BOOT button is not necessary for the subsequent upload; however, if you encounter any problems, repeat the same procedures. 
 
 - When using USB native you will get COM PORT (maybe different in your case) as shown in below image, and while uploading you can enable CDC Mode to visualize data on serial com port.
@@ -52,7 +88,7 @@
     <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/c6_default_setting.png" width="493" height="413">
 
 
-#### For Micro RP2040  
+### For Micro RP2040  
 - When programming Micro RP2040 with Arduino IDE, you will have to press hold BOOT button and then connect Type C. Here also, pressing the BOOT button is not necessary for the subsequent upload; however, if you encounter any problems, repeat the same procedures.
 - For first time port listed as shown below in device manager,
 
