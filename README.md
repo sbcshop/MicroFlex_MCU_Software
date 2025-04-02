@@ -7,129 +7,65 @@ This GitHub provides basic instructions for working with specific MCU boards.
 
 ## Key Features:
 
-| Feature   | Micro S3 | Micro S2 | Micro C3 | Micro C6 | Micro RP2040 |
-|-----------|----------|----------|----------|----------|--------------|
-| CPU       |  Xtensa® Dual-core 32-bit LX7 Microprocessor |  Xtensa® Single-Core 32-bit LX7 Microprocessor  | RISC-V 32-bit single-core Microprocessor | RISC-V 32-bit single-core microprocessor | Dual Cortex M0+ processor |
-|Memory | 384 KB ROM, 512 KB SRAM | 128 KB ROM, 320 KB SRAM | 384KB ROM, 400KB SRAM | 320KB ROM, 512KB HP and 16KB LP SRAM |264kB SRAM, 16kB ROM |
-|Flash | 4MB | 4MB | 4MB | 4MB | 2MB |
-|PSRAM | 2MB | 2MB | - | - | - |
-|Typical frequency | 240 MHz | 240 MHz | 160 MHz | 160 MHz | 133 MHz |
-|WiFi protocol | IEEE 802.11b/g/n | IEEE 802.11 b/g/n | IEEE 802.11 b/g/n | WiFi 6 2.4GHz band, IEEE 802.11b/g/n/ax | - |
-|Bluetooth | Bluetooth 5.0 | - | Bluetooth 5.0 | Bluetooth 5.3  | - |
-|IEEE 802.15.4 | - | - | - | Thread 1.3, Zigbee 3.0 | - |
+| Feature          | Micro S3 | Micro S2 | Micro C3 | Micro C6 | Micro RP2040 |
+|------------------|----------|----------|----------|----------|--------------|
+| CPU              |  Xtensa® Dual-core 32-bit LX7 Microprocessor |  Xtensa® Single-Core 32-bit LX7 Microprocessor  | RISC-V 32-bit single-core Microprocessor | RISC-V 32-bit single-core microprocessor | Dual Cortex M0+ processor |
+|Memory            | 384 KB ROM, 512 KB SRAM | 128 KB ROM, 320 KB SRAM | 384KB ROM, 400KB SRAM | 320KB ROM, 512KB HP and 16KB LP SRAM |264kB SRAM, 16kB ROM |
+|Flash             | 4MB | 4MB | 4MB | 4MB | 2MB |
+|PSRAM             | 2MB | 2MB | - | - | - |
+|Frequency         | 240 MHz | 240 MHz | 160 MHz | 160 MHz | 133 MHz |
+|WiFi              | IEEE 802.11b/g/n | IEEE 802.11 b/g/n | IEEE 802.11 b/g/n | WiFi 6 2.4GHz band, IEEE 802.11b/g/n/ax | - |
+|Bluetooth         | Bluetooth 5.0 | - | Bluetooth 5.0 | Bluetooth 5.3  | - |
+|IEEE 802.15.4     | - | - | - | Thread 1.3, Zigbee 3.0 | - |
 |Digital Interface | UART, SPI, I2C, PWM or TWAI | UART, SPI, I2C, PWM or TWAI | UART, SPI, I2C, PWM or TWAI | UART, SPI, I2C, PWM or TWAI | UART, SPI, I2C, PWM or PIO  |
-|ADC Interface | 12-bit | 12-bit  | 12-bit | 12-bit | 12-bit |
-|DAC | - | 8-bit | - | - | - |
-|Touch Sensor | 14 | 14 | - | - | - |
-| Datasheet | [ESP32-S3](https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/Documents/esp32-s3_datasheet_en.pdf) | [ESP32-S2](https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/Documents/esp32-s2_datasheet_en.pdf) | [ESP32-C3](https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/Documents/esp32-c3_datasheet_en.pdf) | [ESP32-C6](https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/Documents/esp32-c6_datasheet_en.pdf) | [RP2040](https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/Documents/rp2040-datasheet.pdf) |
+|ADC Interface     | 12-bit | 12-bit  | 12-bit | 12-bit | 12-bit |
+|DAC               | - | 8-bit | - | - | - |
+|Touch Sensor      | 14 | 14 | - | - | - |
+|Castellated module| Yes | Yes | Yes | Yes | Yes |
+|Schematic         | [Micro S3 SCH]() | [Micro S2 SCH]() | [Micro C3 SCH]() | [Micro C6 SCH]() | [Micro RP2040 SCH]() |
+|Datasheet         | [ESP32-S3](https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/Documents/esp32-s3_datasheet_en.pdf) | [ESP32-S2](https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/Documents/esp32-s2_datasheet_en.pdf) | [ESP32-C3](https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/Documents/esp32-c3_datasheet_en.pdf) | [ESP32-C6](https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/Documents/esp32-c6_datasheet_en.pdf) | [RP2040](https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/Documents/rp2040-datasheet.pdf) |
 
-
-<!--
-> [!NOTE]
-> ESP32-C2 is also supported by Arduino-ESP32 but requires using Arduino as an ESP-IDF component or rebuilding the static libraries.  
-> For more information, see the [Arduino as an ESP-IDF component documentation](https://example.com)  
--->
 ## Pinout and Interfacing Details
 
+### Micro S3
+<img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/micro_S3_Pinouts.jpg" width="" height="">
 
-## Getting Started 
-
-### 1. Configure and Setup Development Environment
-- Download Arduino IDE from [official site](https://www.arduino.cc/en/software) and install into your system. We have use Arduino IDE 1.8.19
-- Once installation done will add ESP32 Series and Pico board support into IDE, for this first you need to add below link into preference:
-  
-  ```
-  https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
-  ```
-
-  For Pico boards use below link,
-  ```
-  https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json
-  ```
-  Select File > Preference, and add link as shown in below image then click ok,
-
-  <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/preference_add.gif" width="" height="">
-  
-   
-- From board manager install ESP32 and Pico boards as shown below, If boards haven't been installed before, the install button will be activated.
-
-  <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/b1.png" width="959" height="510">
-  <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/b2.png" width="591" height="333">
-  <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/b3.png" width="585" height="331">
-     
-#### For Micro S3, S2, C3 and C6
-- Here Native USB of ESP32 is used, so you will have to press hold BOOT button and then connect Type C for uploading codes. Pressing the BOOT button is not necessary for the subsequent upload; however, if you encounter any problems, repeat the same procedures. 
-
-- When using USB native you will get COM PORT (maybe different in your case) as shown in below image, and while uploading you can enable CDC Mode to visualize data on serial com port.
-  
-  <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/esp32_comport.png" width="583" height="418">
-  
-- Select correct Micro dev board, 
-
-  <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/esp32_s3_boardselect.png" width="959" height="509">
-  
-- Defualt setting to select while uploading codes,
-  - **for Micro S3**,
-
-    <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/s3_default_setting.png" width="493" height="413">
-
-  - **for Micro S2**,
-
-    <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/s2_default_setting.png" width="493" height="413">
-
-  - **for Micro C3**,
-
-    <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/c3_default_setting.png" width="493" height="413">
-
-  - **for Micro C6**,
-
-    <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/c6_default_setting.png" width="493" height="413">
+<img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/micro_S3_GPIO_info.jpg" width="" height="">
 
 
-#### For Micro RP2040  
-- When programming Micro RP2040 with Arduino IDE, you will have to press hold BOOT button and then connect Type C. Here also, pressing the BOOT button is not necessary for the subsequent upload; however, if you encounter any problems, repeat the same procedures.
-- For first time port listed as shown below in device manager,
+### Micro S2
+<img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/micro_S2_Pinouts.jpg" width="" height="">
 
-  <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/rpi_boot_device.png" width="586" height="426">
+<img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/micro_S2_GPIO_info.jpg" width="" height="">
 
-- Select RP2040 board and Port as UF2 Board,
+### Micro C3
+<img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/micro_C3_Pinouts.jpg" width="" height="">
 
-  <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/rp2040_board_select.png" width="959" height="511">
+<img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/micro_C3_GPIO_info.jpg" width="" height="">
 
-  <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/rpi_port_uf2.png" width="529" height="393">
+### Micro C6
+<img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/micro_C6_pinout.jpg" width="" height="">
 
-- Hit upload button and monitor data on serial port, once code uploaded first time then next time board will list with some com port as shown,
+<img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/micro_C6_GPIO_info.jpg" width="" height="">
 
-  <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/upload_pico.png" width="959" height="510">
+### Micro RP2040
+<img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/micro_RP2040_Pinouts.jpg" width="" height="">
 
-  <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/rpi_port.png" width="516" height="372">
-
-  <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/serial_monitor_pico.png" width="958" height="510">
-          
-<!--
-### 2. Installing Libraries
-   - When compiling sample codes there are some dependency on external libraries sometime which you can add as shown here.
-   - For example installing library, for display select Sketch > Include Library > Manage Libraries. We need ST7789 (1.10.3 version) and GFX library (1.11.7 version) for 1.14" TFT Display,
-
-     <img src= "https://github.com/sbcshop/EnkFi_7.5_Software/blob/main/images/Lib_install.png" />
-
-     <img src= "https://github.com/sbcshop/Rainy_UHF_ESP32_Software/blob/main/images/st7789_lib.png" width="589" height="228" />
-     <img src= "https://github.com/sbcshop/Rainy_UHF_ESP32_Software/blob/main/images/GFX_lib.png" width="588" height="217" />
-
-   - Similarly you can add more libraries if needed, make sure to install correct version. 
+<img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/micro_RP2040_GPIO_info.jpg" width="" height="">
 
 
-### 3. Testing First Code
-   - At this step you are all set to test codes, for easy getting started we have provided various demo [example codes](https://github.com/sbcshop/Rainy_UHF_ESP32_Software/tree/main/examples) in github which you can download and try. 
-   - Open one example code in Arduino and make sure you have selected correct board with suitable com port, click on upload button to transfer code on board.
-     <img src="https://github.com/sbcshop/StackyFi_Software/blob/main/images/upload_code.gif">
-   - Checkout other more examples [here](https://github.com/sbcshop/Rainy_UHF_ESP32_Software/tree/main/examples) and build your own custom program codes using those references.
--->
+## Getting Started with MicroFlex MCU board
+You have multiple options to use MicroFlex series boards with C/C++, Micropython and CircuitPython using IDE like Arduino, Thonny or VScode.
+- [MicroFlex Getting Started with Arduino IDE](https://github.com/sbcshop/MicroFlex_MCU_Software/tree/main/MicroFlex%20with%20Arduino%20IDE)
+- [MicroFlex Working with Micropython](https://github.com/sbcshop/MicroFlex_MCU_Software/tree/main/MicroFlex%20with%20Micropython)
+
 
 ## Resources
   * [Hardware Files](https://github.com/sbcshop/MicroFlex_MCU_Hardware)
-  * [Getting Started with ESP32 in Arduino](https://docs.espressif.com/projects/arduino-esp32/en/latest/)
   * [Arduino IDE 1 overview](https://docs.arduino.cc/software/ide-v1/tutorials/Environment)
+  * [ESP32 for Arduino](https://docs.espressif.com/projects/arduino-esp32/en/latest/)
+  * [Quick Reference Micropython for Pico](https://docs.micropython.org/en/latest/rp2/quickref.html)
+  * [Quick Reference Micropython for ESP32](https://docs.micropython.org/en/latest/esp32/quickref.html)
        
 ## Related Products
    * [Rainy UHF Pico Expansion](https://shop.sb-components.co.uk/products/rainypi-uhf-based-on-pico-complete-kit) -  UHF Expansion board easily incorporate Pico/Pico W/Pico 2
