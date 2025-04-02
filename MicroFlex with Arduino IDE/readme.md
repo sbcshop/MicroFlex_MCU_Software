@@ -1,66 +1,42 @@
-# Project Name
-
-## 📑 Table of Contents
-1. [Introduction](#introduction)
-2. [Features](#features)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Contributing](#contributing)
-6. [License](#license)
-7. [Contact](#contact)
-
-## 🏁 Introduction
-Brief overview of the project...
-
-## ✨ Features
-- Feature 1
-- Feature 2
-- Feature 3
-
-## 🔧 Installation
-Steps to install...
-
-## 🚀 Usage
-How to use the project...
-
-## 🤝 Contributing
-Guidelines for contributing...
-
-## 📜 License
-Details about licensing...
-
-## 📩 Contact
-Email, social links...
-
-
 # MicroFlex MCU Boards with Arduino IDE 
+Here we will checkout how to use MicroFlex MCU series board with Arduino IDE for C/C++ development.
 
-## 1. Configure and Setup Development Environment
+### 📑 Table of Contents
+1. [Configure and Setup Environment](https://github.com/sbcshop/MicroFlex_MCU_Software/edit/main/MicroFlex%20with%20Arduino%20IDE/readme.md#-configure-and-setup-environment)
+2. [Running Examples](https://github.com/sbcshop/MicroFlex_MCU_Software/edit/main/MicroFlex%20with%20Arduino%20IDE/readme.md#-running-examples)
+    * [Micro ESP32 Board](https://github.com/sbcshop/MicroFlex_MCU_Software/edit/main/MicroFlex%20with%20Arduino%20IDE/readme.md#micro-esp32---s3-s2-c3-and-c6)
+    * [Micro RP2040](https://github.com/sbcshop/MicroFlex_MCU_Software/edit/main/MicroFlex%20with%20Arduino%20IDE/readme.md#micro-rp2040)
+3. [FAQ](https://github.com/sbcshop/MicroFlex_MCU_Software/edit/main/MicroFlex%20with%20Arduino%20IDE/readme.md#faq)
+
+## 🔧 Configure and Setup Environment
 - Download Arduino IDE from [official site](https://www.arduino.cc/en/software) and install into your system. We have use Arduino IDE 1.8.19
-- Once installation done will add ESP32 Series and Pico board support into IDE, for this first you need to add below link into preference:
+- Once installation done, add ESP32 Series and Pico board support into IDE, for this first you need to copy below link into Additional Board Manager:
   
+  For ESP32 board support,
   ```
   https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
   ```
 
-  For Pico boards use below link,
+  For Pico board support,
   ```
   https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json
   ```
-  Select File > Preference, and add link as shown in below image then click ok,
+  Select File > Preference > Additional Board Manager URL, add provided links as shown in below image then click ok,
 
   <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/preference_add.gif" width="" height="">
   
    
-- From board manager install ESP32 and Pico boards as shown below, If boards haven't been installed before, the install button will be activated.
+- From Board manager install ESP32 and Pico boards as shown below, If boards haven't been installed before, the install button will be activated.
 
   <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/b1.png" width="959" height="510">
   <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/b2.png" width="591" height="333">
   <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/b3.png" width="585" height="331">
      
-## 2. Running Examples
-### For Micro S3, S2, C3 and C6
-- Here Native USB of ESP32 is used, so you will have to press hold BOOT button and then connect Type C for uploading codes. Pressing the BOOT button is not necessary for the subsequent upload; however, if you encounter any problems, repeat the same procedures. 
+## 🚀 Running Examples
+Download and open RGB demo examples provided above for corresponding board or you can open sample examples available in Arduino IDE.
+
+### Micro ESP32 - S3, S2, C3 and C6
+- Here Native USB of ESP32 is used, so you will have to press hold BOOT button and then connect Type C for uploading codes. Pressing the BOOT button is not necessary for the subsequent upload; however, if you encounter any problems, repeat the same procedures. For micro S2 version you will have to repeat procedure during each upload.
 
 - When using USB native you will get COM PORT (maybe different in your case) as shown in below image, and while uploading you can enable CDC Mode to visualize data on serial com port.
   
@@ -87,9 +63,14 @@ Email, social links...
 
     <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/c6_default_setting.png" width="493" height="413">
 
+- Once everything all set click on upload button. If example not running after upload, click onboard reset button and execution of code will start.
+  
+  <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/c6_default_setting.png" width="493" height="413">
+  
+### Micro RP2040  
 
-### For Micro RP2040  
-- When programming Micro RP2040 with Arduino IDE, you will have to press hold BOOT button and then connect Type C. Here also, pressing the BOOT button is not necessary for the subsequent upload; however, if you encounter any problems, repeat the same procedures.
+- When programming Micro RP2040 with Arduino IDE, you will have to press hold BOOT button and then connect Type C. Pressing the BOOT button is not necessary for the subsequent upload; however, if you encounter any problems, repeat the same procedures. 
+
 - For first time port listed as shown below in device manager,
 
   <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/rpi_boot_device.png" width="586" height="426">
@@ -100,7 +81,7 @@ Email, social links...
 
   <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/rpi_port_uf2.png" width="529" height="393">
 
-- Hit upload button and monitor data on serial port, once code uploaded first time then next time board will list with some com port as shown,
+- With example open hit upload button and monitor data on serial port, once code uploaded first time then next time board will list with some com port as shown,
 
   <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/upload_pico.png" width="959" height="510">
 
@@ -119,11 +100,20 @@ Email, social links...
      <img src= "https://github.com/sbcshop/Rainy_UHF_ESP32_Software/blob/main/images/GFX_lib.png" width="588" height="217" />
 
    - Similarly you can add more libraries if needed, make sure to install correct version. 
-
-
-### 3. Testing First Code
-   - At this step you are all set to test codes, for easy getting started we have provided various demo [example codes](https://github.com/sbcshop/Rainy_UHF_ESP32_Software/tree/main/examples) in github which you can download and try. 
-   - Open one example code in Arduino and make sure you have selected correct board with suitable com port, click on upload button to transfer code on board.
-     <img src="https://github.com/sbcshop/StackyFi_Software/blob/main/images/upload_code.gif">
-   - Checkout other more examples [here](https://github.com/sbcshop/Rainy_UHF_ESP32_Software/tree/main/examples) and build your own custom program codes using those references.
 -->
+
+## ❓FAQ
+
+1. On the COM port, the board is not detecting.
+    - Check connection is proper or replace Type C cable
+    - Reinstall ESP32/Pico board support
+    - Try with different USB port of PC/laptop
+       
+2. No data printing over Serial port.
+    - Make sure to enable CDC Mode while uploading code
+
+3. Code is not running even after successful upload.
+    - Click onboard reset button or disconnect power and reconnect
+    
+4. For ESP32 Micro S2 Board keeps disconnecting and reconnecting 
+    - Press hold boot button and then connect to USB, now release boot button. You will have to repeat this procedure for every new code upload.
