@@ -22,7 +22,6 @@ This GitHub provides basic instructions for working with specific MCU boards.
 |DAC               | - | 8-bit | - | - | - |
 |Touch Sensor      | 14 | 14 | - | - | - |
 |Castellated module| Yes | Yes | Yes | Yes | Yes |
-|Schematic         | [Micro S3 SCH]() | [Micro S2 SCH]() | [Micro C3 SCH]() | [Micro C6 SCH]() | [Micro RP2040 SCH]() |
 |Datasheet         | [ESP32-S3](https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/Documents/esp32-s3_datasheet_en.pdf) | [ESP32-S2](https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/Documents/esp32-s2_datasheet_en.pdf) | [ESP32-C3](https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/Documents/esp32-c3_datasheet_en.pdf) | [ESP32-C6](https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/Documents/esp32-c6_datasheet_en.pdf) | [RP2040](https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/Documents/rp2040-datasheet.pdf) |
 
 ## Pinout and Interfacing Details
@@ -61,18 +60,32 @@ You have multiple options to use MicroFlex series boards with C/C++, Micropython
 
 
 ## Resources
+  * [Micro S3](https://github.com/sbcshop/MicroFlex_MCU_Hardware/blob/main/Design%20Data/Micro_S3%20Sch.pdf),  [Micro S2](https://github.com/sbcshop/MicroFlex_MCU_Hardware/blob/main/Design%20Data/Micro_S2%20Sch.pdf), [Micro C3](https://github.com/sbcshop/MicroFlex_MCU_Hardware/blob/main/Design%20Data/Micro_C3%20Sch.pdf), [Micro C6](https://github.com/sbcshop/MicroFlex_MCU_Hardware/blob/main/Design%20Data/Micro_C6%20Sch.pdf), [Micro RP2040 Schematic](https://github.com/sbcshop/MicroFlex_MCU_Hardware/blob/main/Design%20Data/Micro_RP2040%20Sch.pdf)
   * [Hardware Files](https://github.com/sbcshop/MicroFlex_MCU_Hardware)
   * [Arduino IDE 1 overview](https://docs.arduino.cc/software/ide-v1/tutorials/Environment)
   * [ESP32 for Arduino](https://docs.espressif.com/projects/arduino-esp32/en/latest/)
   * [Quick Reference Micropython for Pico](https://docs.micropython.org/en/latest/rp2/quickref.html)
   * [Quick Reference Micropython for ESP32](https://docs.micropython.org/en/latest/esp32/quickref.html)
        
-## Related Products
-   * [Rainy UHF Pico Expansion](https://shop.sb-components.co.uk/products/rainypi-uhf-based-on-pico-complete-kit) -  UHF Expansion board easily incorporate Pico/Pico W/Pico 2
-   * [Rainy UHF HAT](https://shop.sb-components.co.uk/products/rainy-uhf-pi-hat-complete-kit) - UHF module HAT with Standard 40pin to support Raspberry Pi
-   * [Rainy UHF SHIELD](https://shop.sb-components.co.uk/products/rainy-shield-for-arduino-board-complete-kit) - UHF Shield form factor for use with Arduino, Ardi-32, Ardi-Pi, and other compatible boards.
-   * [Rainy UHF Breakout](https://shop.sb-components.co.uk/products/rainy-uhf-breakout-complete-kit) - Compact UHF module breakout with Type C for standalone use and TTL for interfacing with various MCU.
+## Related Products  
+  
+  * [ArdiPi - Uno R3 Alternative Board Based on Pico W](https://shop.sb-components.co.uk/products/ardipi-uno-r3-alternative-board-based-on-pico-w)
 
+    ![ArdiPi](https://shop.sb-components.co.uk/cdn/shop/files/ARDIBACK.jpg?v=1688462154&width=150)
+
+  * [Ardi32 - Uno R3 Alternative Board Based on ESP32-S3-WROOM-1](https://shop.sb-components.co.uk/products/ardi32-uno-r3-alternative-board-based-on-esp32-s3-wroom)
+
+    ![Ardi32](https://shop.sb-components.co.uk/cdn/shop/files/esp321.jpg?v=1688468126&width=150)
+
+  * [PiCoder - Compact DIY Raspberry Pi Pico W Learning Kit](https://shop.sb-components.co.uk/collections/pico-new-releases/products/picoder-compact-diy-raspberry-pi-pico-wh-learning-kit)
+
+    ![PiCoder](https://shop.sb-components.co.uk/cdn/shop/files/shopimg2.jpg?v=1695883740&width=150)
+
+  * [Raspberry Pi Pico Breadboard Kit With Pico 2](https://shop.sb-components.co.uk/products/raspberry-pi-pico-2-breadboard-kit)
+
+    ![Raspberry Pi Pico Breadboard Kit](https://shop.sb-components.co.uk/cdn/shop/files/PICO_BREADBOARD_1.png?v=1726147415&width=150)
+
+       
 ## Product License
 
 This is ***open source*** product. Kindly check LICENSE.md file for more information.
