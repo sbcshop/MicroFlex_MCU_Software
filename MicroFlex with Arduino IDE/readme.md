@@ -93,7 +93,7 @@ Download and open [onboard RGB demo](https://github.com/sbcshop/MicroFlex_MCU_So
 
   <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/serial_monitor_pico.png" width="958" height="510">
           
-## Installing Libraries
+## 📥 Installing Libraries
    - When compiling sample codes there are can be dependency on external libraries sometime which you can add as shown here.
    - For example installing library, for RGB LED select Sketch > Include Library > Manage Libraries. We need neopixel version used 1.12.2,
 
