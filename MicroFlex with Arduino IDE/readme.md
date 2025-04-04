@@ -33,10 +33,14 @@ Here we will checkout how to use MicroFlex MCU series board with Arduino IDE for
   <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/b3.png" width="585" height="331">
      
 ## 🚀 Running Examples
-Download and open RGB demo examples provided above for corresponding board or you can open sample examples available in Arduino IDE.
+Download and open [onboard RGB demo](https://github.com/sbcshop/MicroFlex_MCU_Software/tree/main/MicroFlex%20with%20Arduino%20IDE/RGBLED_Blink) examples provided above for corresponding board or you can open defualt examples available in Arduino IDE.
+
+<img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/esp32_samples.png" width="959" height="510">
 
 ### Micro ESP32 - S3, S2, C3 and C6
 - Here Native USB of ESP32 is used, so you will have to press hold BOOT button and then connect Type C for uploading codes. Pressing the BOOT button is not necessary for the subsequent upload; however, if you encounter any problems, repeat the same procedures. For micro S2 version you will have to repeat procedure during each upload.
+
+  <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/S3_bootBtn.png" width="229" height="184">
 
 - When using USB native you will get COM PORT (maybe different in your case) as shown in below image, and while uploading you can enable CDC Mode to visualize data on serial com port.
   
@@ -65,7 +69,7 @@ Download and open RGB demo examples provided above for corresponding board or yo
 
 - Once everything all set click on upload button. If example not running after upload, click onboard reset button and execution of code will start.
   
-  <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/c6_default_setting.png" width="493" height="413">
+  <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/esp32_example_upload.png" width="959" height="510">
   
 ### Micro RP2040  
 
