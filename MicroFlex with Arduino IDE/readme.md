@@ -93,19 +93,16 @@ Download and open [onboard RGB demo](https://github.com/sbcshop/MicroFlex_MCU_So
 
   <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/serial_monitor_pico.png" width="958" height="510">
           
-<!--
-### 2. Installing Libraries
-   - When compiling sample codes there are some dependency on external libraries sometime which you can add as shown here.
-   - For example installing library, for display select Sketch > Include Library > Manage Libraries. We need ST7789 (1.10.3 version) and GFX library (1.11.7 version) for 1.14" TFT Display,
+## Installing Libraries
+   - When compiling sample codes there are can be dependency on external libraries sometime which you can add as shown here.
+   - For example installing library, for RGB LED select Sketch > Include Library > Manage Libraries. We need neopixel version used 1.12.2,
 
-     <img src= "https://github.com/sbcshop/EnkFi_7.5_Software/blob/main/images/Lib_install.png" />
+     <img src= "https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/lib_install.png" width="959" height="510" />
 
-     <img src= "https://github.com/sbcshop/Rainy_UHF_ESP32_Software/blob/main/images/st7789_lib.png" width="589" height="228" />
-     <img src= "https://github.com/sbcshop/Rainy_UHF_ESP32_Software/blob/main/images/GFX_lib.png" width="588" height="217" />
+     <img src= "https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/neopixel_lib.png" width="583" height="328" />
 
-   - Similarly you can add more libraries if needed, make sure to install correct version. 
--->
-
+   - Similarly you can add more libraries if needed, make sure to install correct version.
+     
 ## ❓FAQ
 
 1. On the COM port, the board is not detecting.
