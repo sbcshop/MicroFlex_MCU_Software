@@ -10,7 +10,7 @@ Here we will checkout how to use MicroFlex MCU series board with MicroPython.
 
   <img src="https://github.com/sbcshop/Micro_RP2040/blob/main/Images/firmware_install.gif"  width= "720" height= "382">
 
-- Open example and make sure to check file view helpful for easy access of files between system and Micro RP2040 board. You can run script directly from thonny for testing or save to board as main.py for standalone execution.
+- Open [example](https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/MicroFlex%20with%20Micropython/RGBBlink.py) and make sure to check file view helpful for easy access of files between system and Micro RP2040 board. You can run script directly from thonny for testing or save to board as main.py for standalone execution.
 
   <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/file_view.png"  width= "958" height= "508">
 
@@ -35,7 +35,7 @@ Here we will checkout how to use MicroFlex MCU series board with MicroPython.
   <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/esptool_flash_firmware_s3.png" width="1072" height="382">
   
 - Visit official site to get more info and download latest MicroPython firmware for corresponding board => [Micro S3](https://micropython.org/download/ESP32_GENERIC_S3/), [Micro S2](https://micropython.org/download/ESP32_GENERIC_S2/), [Micro C3](https://micropython.org/download/ESP32_GENERIC_C6/), [Micro C6](https://micropython.org/download/ESP32_GENERIC_C3/)
-- Once firmware installed successfully, open example with thonny and select board as ESP32. Here instead of main.py you will have to save as boot.py,
+- Once firmware installed successfully, open [example](https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/MicroFlex%20with%20Micropython/RGBBlink.py) with thonny and select board as ESP32. Here instead of main.py you will have to save as boot.py,
 
   <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/micropython_esp32.png" width="959" height="508">
 
