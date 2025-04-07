@@ -18,19 +18,26 @@ Here we will checkout how to use MicroFlex MCU series board with MicroPython.
 
   <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/save_main.gif"  width= "958" height= "508">
   
-- Hello 
 
-<!--
 ### Micro ESP32 - S3, S2, C3 and C6
-- From Board manager install ESP32 and Pico boards as shown below, If boards haven't been installed before, the install button will be activated.
+- For ESP32 based Micro you will need esptool to add MicroPython firmware, dependency is python so first make sure you have install python. You can download python from [official site](https://www.python.org/downloads/).
+- Install esptool with pip as shown below,
 
-  <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/b1.png" width="959" height="510">
-  <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/b2.png" width="591" height="333">
-  <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/b3.png" width="585" height="331">
+  <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/esptool_install.png" width="577" height="112">
+
+- Download firmware provided here in github and open cmd with location into same folder. Connect corresponding micro board and execute flash erase command,
+
+  <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/esptool_erase_flash.png" width="732" height="240">
+
+- Execute firmware flash command with exact selected firmware for your board, Except for ESP32 S2 write_flash start address is 0.
+
+  <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/esptool_flash_firmware.png" width="1072" height="382">
+  <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/esptool_flash_firmware_s3.png" width="1072" height="382">
+  
+- Visit official site to get more info and download latest MicroPython firmware for corresponding board => [Micro S3](https://micropython.org/download/ESP32_GENERIC_S3/), [Micro S2](https://micropython.org/download/ESP32_GENERIC_S2/), [Micro C3](https://micropython.org/download/ESP32_GENERIC_C6/), [Micro C6](https://micropython.org/download/ESP32_GENERIC_C3/)
+- Once firmware installed successfully, open example with thonny and select board as ESP32. Here instead of main.py you will have to save as boot.py,
+
+  <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/micropython_esp32.png" width="959" height="508">
+
+
      
-## 🚀 Running Examples
-Download and open [onboard RGB demo](https://github.com/sbcshop/MicroFlex_MCU_Software/tree/main/MicroFlex%20with%20Arduino%20IDE/RGBLED_Blink) examples provided above for corresponding board or you can open defualt examples available in Arduino IDE.
-
-<img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/esp32_samples.png" width="959" height="510">
-
--->
