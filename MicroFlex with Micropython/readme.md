@@ -35,9 +35,9 @@ Here we will checkout how to use MicroFlex MCU series board with MicroPython.
   <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/esptool_flash_firmware_s3.png" width="1072" height="382">
   
 - Visit official site to get more info and download latest MicroPython firmware for corresponding board => [Micro S3](https://micropython.org/download/ESP32_GENERIC_S3/), [Micro S2](https://micropython.org/download/ESP32_GENERIC_S2/), [Micro C3](https://micropython.org/download/ESP32_GENERIC_C6/), [Micro C6](https://micropython.org/download/ESP32_GENERIC_C3/)
-- Once firmware installed successfully, open [example](https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/MicroFlex%20with%20Micropython/RGBBlink.py) with thonny and select board as ESP32. Here instead of main.py you will have to save as boot.py,
+- Once firmware installed successfully, open [example](https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/MicroFlex%20with%20Micropython/RGBBlink.py) with thonny and select board as ESP32. Save code as **main.py** for standalone execution,
 
-  <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/micropython_esp32.png" width="959" height="508">
+  <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/micropython_esp32.jpg" width="959" height="508">
 
 
      
