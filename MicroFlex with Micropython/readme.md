@@ -25,11 +25,27 @@ Here we will checkout how to use MicroFlex MCU series board with MicroPython.
 
   <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/esptool_install.png" width="577" height="112">
 
+Erasing: 
 - Download firmware provided here in github and open cmd with location into same folder. Connect corresponding micro board and execute flash erase command,
+  ```
+  esptool erase_flash
+  ```
+  OR, if not automatically detected you can specify port as well.
+  ```
+  esptool --port PORTNAME erase_flash
+  ```
 
   <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/esptool_erase_flash.png" width="732" height="240">
 
+Flashing:
 - Execute firmware flash command with exact selected firmware for your board, Except for ESP32 S2 write_flash start address is 0.
+  ```
+  esptool --baud 460800 write_flash 0 ESP32_BOARD_NAME-DATE-VERSION.bin
+  ```
+  OR, if not automatically detected you can specify port as well.
+  ```
+  esptool --port PORTNAME --baud 460800 write_flash 0 ESP32_BOARD_NAME-DATE-VERSION.bin
+  ```
 
   <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/esptool_flash_firmware.png" width="1072" height="382">
   <img src="https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/images/esptool_flash_firmware_s3.png" width="1072" height="382">
