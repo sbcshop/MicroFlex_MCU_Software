@@ -6,7 +6,7 @@ Here we will checkout how to use MicroFlex MCU series board with MicroPython.
 
 ### Micro RP2040  
 - We will have to install micropython firmware on Micro RP2040 board, for this press and hold onboard boot button then connect to laptop/PC via Type C connector.   
-- Now release boot button, it will mount as a Mass Storage Device called RPI-RP2. Download the [MicroPython .UF2 file]() or get latest one from [here](https://micropython.org/download/RPI_PICO/) for Pico. Drag and drop file the onto the RPI-RP2 volume. Your Pico will reboot. You are now running MicroPython.
+- Now release boot button, it will mount as a Mass Storage Device called RPI-RP2. Download the [MicroPython .UF2 file](https://github.com/sbcshop/MicroFlex_MCU_Software/blob/main/MicroFlex%20with%20Micropython/Firmware_pico.uf2) or get latest one from [here](https://micropython.org/download/RPI_PICO/) for Pico. Drag and drop file the onto the RPI-RP2 volume. Your Pico will reboot. You are now running MicroPython.
 
   <img src="https://github.com/sbcshop/Micro_RP2040/blob/main/Images/firmware_install.gif"  width= "720" height= "382">
 
